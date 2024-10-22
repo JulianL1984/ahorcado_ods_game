@@ -10,8 +10,10 @@
     padding: 20px;
     border-radius: 10px;
     font-family: "Press Start 2P", system-ui; /* Tipo de fuente */
-    font-size: 30px;
+    font-size: 18px;
+    text-shadow: 5px 5px 3px #000000;
     z-index: 1000; /* Para que esté por encima de otros elementos */
+    box-shadow: 0px 0px 10px 3px rgba(31, 30, 30, 0.7); /* Sombra del borde */
 }
 
 .alert button {
@@ -23,6 +25,7 @@
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    text-shadow: 5px 5px 3px #000000;
 }
 
 .alert button:hover {
@@ -64,10 +67,12 @@ body {
     text-align: center;
     background-color: rgba(159, 187, 240, 0.9);
     padding: 10px 0;
+    text-shadow: 3px 3px 3px #fffdfd;
+    box-shadow: 0px 0px 10px 3px rgba(252, 0, 0, 0.7); /* Sombra del borde */
 }
 
 .cabecera_titulo {
-    font-size: 30px;
+    font-size: 15px;
     color: rgb(1, 6, 75);
 }
 
@@ -91,25 +96,29 @@ body {
 
 #juego,
 #temporizador {
-    font-size: 20px;
+    font-size: 15px;
     background-color: rgba(238, 255, 0, 0.8);
     padding: 15px;
     border-radius: 10px;
     color: black;
+    text-shadow: 3px 3px 3px #fffdfd;
+    box-shadow: 0px 0px 10px 3px rgba(17, 17, 17, 0.7); /* Sombra del borde */
 }
 
 .instrucciones {
     margin-bottom: 40px;
-    font-size: 15px;
+    font-size: 10px;
     background-color: rgba(138, 43, 226, 0.8);
     padding: 10px;
     border-radius: 10px;
     color: black;
+    text-shadow: 3px 3px 3px #fffdfd;
+    box-shadow: 0px 0px 10px 3px rgba(17, 17, 17, 0.7); /* Sombra del borde */
 }
 
 #palabraAdivinar {
-    font-size: 30px;
-    letter-spacing: 10px;
+    font-size: 15px;
+    letter-spacing: 5px;
     margin-top: 20px;
     color: rgb(255, 0, 0);
 }
@@ -121,6 +130,7 @@ body {
     border: 5px solid black;
     display: block;
     margin: 10px auto;
+    box-shadow: 0px 0px 10px 3px rgba(17, 17, 17, 0.7); /* Sombra del borde */
 }
 
 button {
@@ -133,6 +143,7 @@ button {
     color: rgb(0, 0, 0);
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0px 0px 10px 3px rgba(17, 17, 17, 0.7); /* Sombra del borde */
 }
 
 button:hover {
@@ -143,7 +154,7 @@ button:hover {
 #inputPalabra, 
 #inputLetra {
     padding: 10px;
-    font-size: 14px;
+    font-size: 10px;
     width: 300px;
     margin: 10px 0;
     border: 1px solid #000000;
@@ -165,7 +176,7 @@ button:hover {
 #reiniciarBtn {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 14px;
+    font-size: 10px;
     margin-top: 20px;
     background-color: #460101;
     color: white;
