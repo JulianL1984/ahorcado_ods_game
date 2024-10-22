@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conociendo los ODS - Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecera">
+        <h1 class="cabecera_titulo">Juega con los Objetivos de Desarrollo Sostenibles</h1>
+    </header>
+
+    <div class="contenedor">
+        <!-- Columna izquierda -->
+        <div class="columna-izquierda">
+            <section class="instrucciones">
+                <h2>Introduce una palabra sobre los Objetivos de Desarrollo Sostenibles (No se mostrará):</h2>
+                <input type="password" id="inputPalabra" placeholder="Escribe aquí..." maxlength="40">
+                <button id="empezarBtn">Empezar</button>
+            </section>
+
+            <section id="juego" class="hidden">
+                <p id="temporizador">Tiempo restante: 2:00</p>
+                <p id="palabraAdivinar"></p>
+                <p id="mensaje"></p>
+                <label for="inputLetra">Ingresa una letra:</label>
+                <input type="text" id="inputLetra" maxlength="1">
+                <button id="probarLetraBtn">Probar</button>
+            </section>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="columna-derecha">
+            <canvas id="canvasAhorcado" width="600" height="500"></canvas>
+            <button id="reiniciarBtn" class="hidden">Reiniciar</button>
+            <section class="espacio_ahorcado">
+                <div id="ahorcado">
+                    <!-- Aquí se dibujará el personaje -->
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="customAlert" class="alert">
+        <p id="alertMessage"></p>
+        <button onclick="closeAlert()">Cerrar</button>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Elaborado por Julian Labastidas para los estudiantes del Colegio José Joaquín Castro Martínez - 2024.</p>
+        </div>
+    </footer>
+</body>
+</html>
