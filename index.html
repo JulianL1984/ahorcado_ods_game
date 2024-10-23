@@ -9,20 +9,24 @@
 </head>
 <body>
     <header class="cabecera">
-        <h1 class="cabecera_titulo">Juega con los Objetivos de Desarrollo Sostenibles</h1>
+        <h1 class="cabecera_titulo">Juega con los Objetivos de Desarrollo Sostenibles (ODS)</h1>
     </header>
 
     <div class="contenedor">
         <!-- Columna izquierda -->
         <div class="columna-izquierda">
             <section class="instrucciones">
-                <h2>Introduce una palabra sobre los Objetivos de Desarrollo Sostenibles (No se mostrará):</h2>
+                <h2>Introduce una palabra sobre los Objetivos de Desarrollo Sostenible (No se mostrará):</h2>
                 <input type="password" id="inputPalabra" placeholder="Escribe aquí..." maxlength="40">
                 <button id="empezarBtn">Empezar</button>
             </section>
 
             <section id="juego" class="hidden">
                 <p id="temporizador">Tiempo restante: 2:00</p>
+                
+                <!-- Nueva sección para mostrar el número de caracteres -->
+                <p id="caracteresInfo"></p>
+
                 <p id="palabraAdivinar"></p>
                 <p id="mensaje"></p>
                 <label for="inputLetra">Ingresa una letra:</label>
