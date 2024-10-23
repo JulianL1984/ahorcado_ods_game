@@ -10,7 +10,6 @@ function closeAlert() {
 // Ejemplo de uso
 showCustomAlert("¡Bienvenido, querido estudiante del José Joaquín Castro Martínez! Piensa en una palabra o frase de no más de 40 caracteres relacionada con los ODS. Crea algunas pistas para ayudar a tus compañeros a descubrir la palabra oculta.");
 
-
 let palabra = '';
 let intentos = 0;
 let palabraAdivinar = [];
@@ -40,7 +39,12 @@ function empezarJuego() {
         return;
     }
 
-    palabraAdivinar = Array.from(palabra).map(letra => (letra === ' ') ? '_' : '_');
+    // Mostrar el número de caracteres de la palabra, ignorando espacios
+    const longitudSinEspacios = palabra.replace(/ /g, '').length;
+    document.getElementById('caracteresInfo').textContent = `Adivinar (${longitudSinEspacios} caracteres)`;
+
+    // Inicializar la palabra a adivinar, reemplazando espacios por guiones
+    palabraAdivinar = Array.from(palabra).map(letra => (letra === ' ') ? '-' : '_');
     mostrarPalabraAdivinar();
     document.getElementById('juego').classList.remove('hidden');
     document.getElementById('inputPalabra').disabled = true;
@@ -56,6 +60,7 @@ function empezarJuego() {
 }
 
 function mostrarPalabraAdivinar() {
+    // Mostrar la palabra adivinada con guiones para espacios
     document.getElementById('palabraAdivinar').textContent = palabraAdivinar.join(' ');
 }
 
